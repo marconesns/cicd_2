@@ -21,4 +21,11 @@ jobs:
         username: marcones.ns
         registry: quay.io
         password: ${{ secrets.QUAY_PASSWORD }}
-      
+        
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v4.1.1
+      with:
+        context: .
+        file: ./Dockerfile
+        push: true
+        tags: marcones.ns/go_ci:${{github.ref_name}}
