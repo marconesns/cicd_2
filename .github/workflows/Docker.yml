@@ -32,4 +32,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: marcones.ns/go_ci:${{github.ref_name}}
+        tags: marconesns/go_ci:${{github.ref_name}}
