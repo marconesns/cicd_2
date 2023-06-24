@@ -1,5 +1,5 @@
 
-name: Go
+name: docker
 
 on:
   workflow_call:
